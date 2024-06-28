@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0.5%;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.background-image {
+  width: 98%;
+  height: auto;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+header,
+footer {padding: 0;z-index: 1;
+  position: sticky;
+}
+header {
+  top: 0;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+}
+nav { background-color: rgba(245, 245, 245, 0.829);
+  display: flex;
+  justify-content: flex-start;
+}
+/* let your images be set in BLOCK so as to REMOVE the default BOTTOM-PADDING that they carry except where you want to keep them in line with a paragraph of text */
+img {
+  display: block;
+  max-width: 100%;
+  max-height: auto;
+}
+nav :hover,
+nav :focus {
+  color: red;
+}
+nav :visited {
+  color: rgba(0, 0, 0, 0.938);
+}
+nav div:nth-child(1) {
+  min-width: 40%;
+  margin-left: 3%;
+  /* border: 1px solid red; */
+  display: flex;
+  /* justify-content: space-evenly; */
+  align-items: flex-start;
+}
+nav div:nth-child(2) {
+  min-width: 40%;
+  margin-left: 17%;
+  /*  border: 1px solid red; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  min-height: 88vh; /* a minimum height of 88 viewport units*/
+  /*  border: 2px solid black; */
+}
+main section {
+  /* margin-top: .5vw; */ /* scroll-margin: top 3vw; */
+  max-width: 100%;
+  height: 100%;
+  /*  border: 1px solid black; */
+}
+.Home {
+  background-image: url(./images/architect.jpg);
+  /*  background-color: red; */
+  max-width: 100%;
+  min-height: 50vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Home div:nth-child(1) {
+  border: 1px solid black;
+  width: 6%;
+  background-color: rgba(0, 0, 0, 0.822);
+  color: white;
+}
+.Home div:nth-child(2) {
+  color: white;
+  letter-spacing: 0.2rem;
+}
+.Projects {
+  /*  max-width: 100vw;
+  max-height: 100vh; */
+  /* background-color: yellow; */
+}
+.Project-section {
+  background-color: white;
+  max-width: 100%;
+  min-height: 50vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Project-section div p {
+  position: relative;
+  background-color: #00000080;
+  max-width: fit-content;
+  color: #ffffff;
+  display: flex;
+  margin-left: -9px;
+  margin-top: -9px;
+  justify-content: flex-start;
+  padding: 0.5rem;
+}
+.Project-section div {
+  /*  border: 1px solid red; */
+  background-repeat: no-repeat;
+  min-width: 21vw;
+  max-height: 15vw;
+  background-size: contain;
+  /*  margin-top: 1vw; */
+  margin-left: 1.5vw;
+}
+.Project-section div:nth-child(1) {
+  background-image: url(./images/summerhouse1.jpg);
+}
+.Project-section div:nth-child(2) {
+  background-image: url(./images/brickhouse1.jpg);
+}
+.Project-section div:nth-child(3) {
+  background-image: url(./images/renovated1.jpg);
+}
+.Project-section div:nth-child(4) {
+  background-image: url(./images/barnhouse1.jpg);
+}
+.Project-section div:nth-child(5) {
+  background-image: url(./images/summerhouse2.jpg);
+}
+.Project-section div:nth-child(6) {
+  background-image: url(./images/brickhouse2.jpg);
+}
+.Project-section div:nth-child(7) {
+  background-image: url(./images/renovated2.jpg);
+}
+.Project-section div:nth-child(8) {
+  background-image: url(./images/barnhouse2.jpg);
+}
+
+.About {
+  max-width: 100vw;
+  min-height: 50vw;
+  /* background-color: green; */
+}
+.staff-bio {
+  justify-content: space-evenly;
+  background-color: white;
+  /* border: 1px solid red; */
+  display: grid;
+  grid-area: staff-bio;
+  column-gap: 0.8rem;
+  grid-template-columns: 22vw 22vw 22vw 22vw;
+  grid-template-rows: 15vw 12vw;
+  place-content: center;
+  text-align: start;
+  row-gap: -50px;
+}
+.staff-bio div {
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  /*   border: 1px solid red; */
+  background-size: contain;
+  position: relative;
+}
+
+.staff-bio div:first-child {
+  color: white;
+  max-width: 100%;
+  max-height: auto;
+  background-image: url(./images/founders/john\ doe.jpg); /* padding-left: 10vw; */
+  background-size: 100%;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.staff-bio div:nth-child(2) {
+  background-image: url(./images/founders/jane\ doe.jpg); /* padding-left: 10vw; */
+  background-size: 100%;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.staff-bio div:nth-child(3) {
+  background-image: url(./images/founders/mike\ ross.jpg); /* padding-left: 10vw; */
+  background-size: 100%;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.staff-bio div:nth-child(4) {
+  background-image: url(./images/founders/dan\ star.jpg); /* padding-left: 10vw; */
+  background-size: 100%;
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+.staff-bio div:nth-child(5) {
+  font-weight: lighter;
+  /* max-width: 100%; max-height: auto; */
+  text-wrap: wrap;
+  text-align: justify;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.staff-bio div:nth-child(6) {
+  font-weight: lighter;
+  text-align: justify;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.staff-bio div:nth-child(7) {
+  font-weight: lighter;
+  text-align: justify;
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.staff-bio div:nth-child(8) {
+  font-weight: lighter;
+  text-align: justify;
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+/*styling the staff comtact section*/
+.staff-bio-contact {
+  /* padding: 2.5rem; */ /* border: 1px solid blueviolet; */
+  display: grid;
+  top: 3vw;
+  place-content: center;
+  justify-content: space-around;
+  position: relative;
+  text-align: justify;
+  /* top: 15%; */
+}
+.staff-bio-contact p:first-child { /* width: 100%; */
+  background-color: rgb(226, 223, 223); /*  border: 1px solid blueviolet; */
+  padding-left: 6.5rem;
+  padding-right: 6.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  /* margin-left: 6rem; */
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.staff-bio-contact p:nth-child(2) {
+  background-color: rgb(226, 223, 223);
+  padding-left: 6.5rem;
+  padding-right: 6.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  /* margin-left: 6rem; */
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.staff-bio-contact p:nth-child(3) {
+  background-color: rgb(226, 223, 223);
+  padding-left: 6.5rem;
+  padding-right: 6.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  /* margin-left: 6rem; */
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.staff-bio-contact p:nth-child(4) {
+  background-color: rgb(226, 223, 223);
+  padding-left: 6.5rem;
+  padding-right: 6.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  /* margin-left: 6rem; */
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+.Contacts {
+  position: relative;
+  display: flex;
+  background-color: rgb(4, 38, 68);
+}
+.Last {
+  position: relative;
+  background-size: cover;
+  margin-bottom: 0vw;
+  /* background-size: contain; */
+}
+/* .Message-Button div {word-spacing: 4vw;} */
+button {
+  width: 18%;
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.Message-button h2 {
+  display: flex;
+  justify-content: start;
+}
+/*styling the input button*/
+input { width: 90%;
+  border: 0.5px solid white;
+}
+input :hover {
+  color: red;
+}
+.Message-button a {
+  display: flex;
+  justify-content: start;
+  background-color: black;
+  color: white;
+}
+/* lightening the placeholder */
+::placeholder {
+  color: rgb(218, 218, 196);
+}
+footer {
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black; /*text-decoration-line: underline;*/
+  color: white;
+  margin-top: -2vw;
+}
+footer a {
+  text-decoration: underline;
+}
